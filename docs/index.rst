@@ -24,7 +24,9 @@ You can also install from the source path, which helps while developing the appl
 
 You can see what version of the module you're using and the path where it's coming from by going to the Python shell and running:
   ``import znbskeleton``
+
   ``print znbskeleton.VERSION``
+
   ``print znbskeleton.__file__``
 
 You can see what packages are installed at any moment:
