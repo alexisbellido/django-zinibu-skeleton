@@ -1,0 +1,3 @@
+- Create some basic Django functionality to see this application working from a project: management commands, views, models, admin changes, signals, forms, templates and template tags, some static files to be used, middleware, URLs, etc.
+
+- Test uploading to PyPi and installing from there.
