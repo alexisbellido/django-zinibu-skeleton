@@ -44,3 +44,16 @@ More information about  pip
 -----------------------------
 
 https://packaging.python.org/en/latest/installing/
+
+-----------------------------
+Distribute with PyPi
+-----------------------------
+
+https://wiki.python.org/moin/TestPyPI
+https://hynek.me/articles/sharing-your-labor-of-love-pypi-quick-and-dirty/
+
+Install with pip and specify version with:
+
+  ``pip install -i https://testpypi.python.org/pypi django-zinibu-skeleton==0.0.2a0``
+
+Test the module from the Python shell as explained above. Make sure you are in a different directory to avoid using the module from the current directory instead of the virtual environment.
