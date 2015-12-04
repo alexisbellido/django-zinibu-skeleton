@@ -11,18 +11,29 @@ Using pip
 You should first switch to the virtual environment you will be using with pyvenv or virtualenv.
 
 To install from the source using a version control system, git in this case, use --editable (-e):
+
   ``pip install -e git://github.com/user/django-zinibu-skeleton#egg=django-zinibu-skeleton``
 
 Use django-zinibu-skeleton, what was defined with the #egg parameter, for uninstalling:
+
   ``pip uninstall django-zinibu-skeleton``
 
 You can also install from the source path, which helps while developing the application while keeping it installed:
+
   ``pip install -e /home/user/django-zinibu-skeleton``
 
 --editable is actually optional so you can:
+
   ``pip install /home/user/django-zinibu-skeleton``
 
+When installing from a source path you may need to manually uninstall the package from your virtual environment. For a certain version of django-zinibu-skeleton (0.0.2a0) in a virtual environment called zinibu_dev, these commands should work:
+
+  ``rm -rf ~/pyvenvs/zinibu_dev/lib/python3.4/site-packages/znbskeleton/``
+
+  ``rm -rf ~/pyvenvs/zinibu_dev/lib/python3.4/site-packages/django_zinibu_skeleton-0.0.2a0-py3.4.egg-info/``
+
 You can see what version of the module you're using and the path where it's coming from by going to the Python shell and running:
+
   ``import znbskeleton``
 
   ``print znbskeleton.VERSION``
@@ -30,9 +41,11 @@ You can see what version of the module you're using and the path where it's comi
   ``print znbskeleton.__file__``
 
 You can see what packages are installed at any moment:
+
   ``pip freeze``
 
 And you can uninstall the same way you did when using a source from version control:
+
   ``pip uninstall django-zinibu-skeleton``
 
 Underscores should work too:
